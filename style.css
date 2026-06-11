@@ -640,6 +640,17 @@ h3 {
   line-height: 1.72;
 }
 
+.timeline-item ul {
+  margin: 0.75rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--text-muted);
+}
+
+.timeline-item li {
+  margin-top: 0.45rem;
+  line-height: 1.65;
+}
+
 .timeline-item .timeline-period {
   font-size: 0.96rem;
 }
