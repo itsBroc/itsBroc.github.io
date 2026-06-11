@@ -1,162 +1,270 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Broc Geronimi, a Software Engineering (Honours) student focused on cloud, data, and full-stack systems.">
+    <title>Broc Geronimi | Software Engineering Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-
-    <script src="https://kit.fontawesome.com/5496582c4f.js" crossorigin="anonymous"></script>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>   
-
     <script defer src="app.js"></script>
-
-    <title>Broc's personal portfolio</title>
-
 </head>
-
 <body>
-    <div class="hero">
-        <nav>
-            <img src="images/logo1.png" alt="logo" class="logo">
-            <ul>
-                <li><a href="#Home"><i class="fa-solid fa-house"></i>Home</a></li>
-                <li><a href="#Projects"><i class="fa-solid fa-code"></i>Projects</a></li>
-                <li><a href="#Skills"><i class="fa-solid fa-gear"></i>Skills</a></li>
-                <li><a href="#Education"><i class="fa-solid fa-school"></i>Education</a></li>
-                <li><a href="#Contact"><i class="fa-solid fa-envelope"></i>Contact Me</a></li>
-                <img src="images/moon.png" alt="moon" id="icon">
-            </ul>
-        </nav>
-        <main>
-            <section id="home">
-                <div class="info">
-                    <img src="images/profile2.png" id="pfp" alt="pfp">
-                    <h1>Hi, i'm <span>Broc</span></h1>
-                    <p>I am an Australian Software Engineering Student currently in 2nd year.</p>
-                </div>
-                <div class="socials">
-                    <a href="https://github.com/itsBroc">
-                        <img src="images/github.png" alt="Github Logo" class="social-logo">Github</a>
-                    <a href="https://www.linkedin.com/in/broc-geronimi-317a722a7/">
-                        <img src="images/linkedin.png" alt="LinkedIn Logo" class="social-logo">LinkedIn</a>
-                    <a href="https://open.spotify.com/user/hotmountain?si=6dd947a43e7b4f42">
-                        <img src="images/Spotify.webp" alt="Spotify Logo" class="social-logo">Spotify</a>
-                    </div>
-            </section>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-            <section id="Projects" class="Projects">
-                <h2>Personal <span>Projects</span></h2>
-                <div class="project-row" data-aos="fade-up">
-                    <div class="project-left"> 
-                        <img src="images/websiteimg1.PNG" alt="website">
-                    </div>
-                    <div class="project-right"> 
-                        <h3>Personal portfolio website</h3>
-                            <ul class="tech-stack-list">
-                                <p><b>Made with: </b></p>
-                                <li><span class="iconify" data-icon="vscode-icons:file-type-html" data-inline="false"></span></li>
-                                <li><span class="iconify" data-icon="vscode-icons:file-type-css" data-inline="false"></span></li>
-                                <li><span class="iconify" data-icon="logos:javascript" data-inline="false"></span></li>
-                            </ul>
-                            <p>The portfolio website that highlights my skills, projects and 
-                                <br>experience as a Software Engineering student. Created 
-                                <br>using HTML and CSS to structure and style the website, 
-                                <br>alongside JavaScript for functionality</p>
-                        <div class = "project-links">
-                            <a href="https://github.com/itsBroc/itsBroc.github.io"><i class="fa-brands fa-github"></i>Code</a>
+    <header class="site-header" id="top">
+        <div class="container header-row">
+            <a class="brand" href="#top" aria-label="Back to top">
+                <span class="brand-mark" aria-hidden="true">BG</span>
+                <span class="brand-name">Broc Geronimi</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+                Menu
+            </button>
+            <nav class="site-nav" id="site-nav" aria-label="Primary">
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#extracurricular">Extracurricular</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero is intentionally concise: one clear value proposition and two primary actions. -->
+        <section class="hero section">
+            <div class="container hero-grid reveal">
+                <h1>Broc Geronimi</h1>
+                <p class="eyebrow">Software Engineering (Honours) Student</p>
+                <p class="lead">Cloud, data, and full-stack engineering focused on practical systems, clean architecture, and measurable impact.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="resume.pdf" download>
+                        <span class="iconify" data-icon="mdi:download" aria-hidden="true"></span>
+                        Resume
+                    </a>
+                    <a class="button button-secondary" href="#contact">
+                        <span class="iconify" data-icon="mdi:email-outline" aria-hidden="true"></span>
+                        Contact Me
+                    </a>
+                </div>
+                <nav class="hero-links" aria-label="Primary profile links">
+                    <a href="https://www.linkedin.com/in/broc-geronimi-317a722a7/" target="_blank" rel="noopener noreferrer">
+                        <span class="iconify" data-icon="mdi:linkedin" aria-hidden="true"></span>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/itsBroc" target="_blank" rel="noopener noreferrer">
+                        <span class="iconify" data-icon="mdi:github" aria-hidden="true"></span>
+                        GitHub
+                    </a>
+                </nav>
+            </div>
+        </section>
+
+        <section class="section" id="education">
+            <div class="container reveal">
+                <h2>Education</h2>
+                <article class="education-card hover-card">
+                    <div class="education-header">
+                        <img src="images/uts2.png" alt="University of Technology Sydney logo" class="education-logo">
+                        <div>
+                            <h3>University of Technology Sydney</h3>
+                            <p>Bachelor of Engineering (Honours), Software Engineering</p>
+                            <p>February 2023 - November 2026</p>
                         </div>
                     </div>
-                </div>
-
-                <div class="project-row" data-aos="fade-up">
-                    <div class="project-left"> 
-                        <img src="images/travelagencyimg1.PNG" alt="website">
-                    </div>
-                    <div class="project-right"> 
-                        <h3>Travel Agency Application</h3>
-                            <ul class="tech-stack-list">
-                                <p><b>Made with: </b></p>
-                                <li><span class="iconify" data-icon="devicon:java" data-inline="false"></span></li>
-                                <li><span class="iconify" data-icon="vscode-icons:file-type-css" data-inline="false"></span></li>
-                            </ul>
-                            <p>A desktop application that was developed to allow users to 
-                                <br>to plan and book trips that involved numerous destinations 
-                                <br>and flights to those destinations. This was programmed
-                                <br>in Java for the backend and JavaFX for the UI, using
-                                <br>the MVC structure to link the two. CSS was also used for
-                                <br>styling.</p>
-                        <div class = "project-links">
-                            <a href="https://github.com/itsBroc/Travel-Agency-Application"><i class="fa-brands fa-github"></i>Code</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="Skills" class="skills">
-                <div class="container" data-aos="fade-in">
-                    <h2>Technical<span> Skills</span></h2>
-                    <ul class="skills-list">
-                        <li><span class="iconify" data-icon="devicon:java" data-inline="false" data-width="90px" data-height="90px"></span><span>Java</span></li>  
-                        <li><span class="iconify" data-icon="logos:python" data-inline="false" data-width="90px" data-height="90px"></span><span>Python</span></li>
-                        <li><span class="iconify" data-icon="vscode-icons:file-type-cpp2" data-inline="false" data-width="90px" data-height="90px"></span><span>C++</span></li>
-                        <li><span class="iconify" data-icon="logos:javascript" data-inline="false" data-width="90px" data-height="90px"></span><span>JavaScript</span></li>
-                        <li><span class="iconify" data-icon="vscode-icons:file-type-html" data-inline="false" data-width="90px" data-height="90px"></span><span>HTML</span></li>
-                        <li><span class="iconify" data-icon="vscode-icons:file-type-css" data-inline="false" data-width="90px" data-height="90px"></span><span>CSS</span></li>
-                        <li><span class="iconify" data-icon="logos:git-icon" data-inline="false" data-width="90px" data-height="90px"></span><span>Git</span></li>
-                        <li><span class="iconify" data-icon="vscode-icons:file-type-sql" data-inline="false" data-width="90px" data-height="90px"></span><span>SQL</span></li>
-                        <li><span class="iconify" data-icon="vscode-icons:file-type-c" data-inline="false" data-width="90px" data-height="90px"></span><span>C</span></li>
-                        <li><span class="iconify" data-icon="vscode-icons:file-type-mysql" data-inline="false" data-width="90px" data-height="90px"></span><span>MySQL</span></li>           
+                    <ul class="education-details">
+                        <li><strong>GPA:</strong> 6.5 / 7</li>
+                        <li><strong>WAM:</strong> 86.60</li>
+                        <li><strong>Coursework Highlights:</strong> Cloud systems, software architecture, data engineering, full-stack development.</li>
+                        <li><strong>Recognition:</strong> Engineering and IT 2024 Dean's List Award.</li>
                     </ul>
-                </div>
-            </section>
+                </article>
+            </div>
+        </section>
 
-            <section id="Education" class="education">
-                <div class ="container">
-                    <h2 data-aos="fade-in">My <span>Education</span></h2>
-                    <div class="education-card" data-aos="fade-in">
-                        <div class="education-card-column">
-                            <div class="education-left">
-                                <img id="uts-light" src="images/uts1.png" alt="uts light">
-                                <img id="uts-dark" src="images/uts2.png" alt="uts dark" style="display:none;">
+        <section class="section" id="experience">
+            <div class="container reveal">
+                <h2>Experience</h2>
+                <p class="section-intro">A timeline of engineering exposure across systems, analytics, and delivery.</p>
+                <ol class="timeline">
+                    <li class="timeline-entry">
+                        <article class="timeline-item hover-card">
+                            <p class="timeline-period">October 2025 - December 2025</p>
+                            <h3>Data and Cloud Engineering Experience</h3>
+                            <p><strong>Role:</strong> Data Engineering Intern</p>
+                            <p>Supported federal referendum ballot processing workflows with a focus on consistency and accuracy.</p>
+                            <p><strong>Impact:</strong> Helped facilitate counting of more than 3,000 ballots while maintaining transparent process controls and team coordination.</p>
+                            <p><strong>Tooling:</strong> Data operations workflows, reporting processes, team communication systems.</p>
+                        </article>
+                    </li>
+                    <li class="timeline-entry">
+                        <article class="timeline-item hover-card">
+                            <p class="timeline-period">February 2025 - May 2025</p>
+                            <h3>Frontend Web Developer</h3>
+                            <p>Collaborated in an Agile delivery team to redesign a client website through the UTS Shopfront Program.</p>
+                            <p><strong>Impact:</strong> Built and integrated key pages, booking flows, and WordPress plugins to improve UX and lower bounce rate.</p>
+                            <p><strong>Tooling:</strong> HTML, CSS, JavaScript, WordPress, agile workflows.</p>
+                        </article>
+                    </li>
+                    <li class="timeline-entry">
+                        <article class="timeline-item hover-card">
+                            <p class="timeline-period">February 2023 - August 2024</p>
+                            <h3>Mathematics Tutor</h3>
+                            <p>Provided personalized mathematics tutoring across varied student skill levels.</p>
+                            <p><strong>Impact:</strong> Improved student confidence and performance through structured lesson planning and adaptive communication.</p>
+                        </article>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Project cards prioritize problem, stack, and outcome over visual media. -->
+        <section class="section" id="projects">
+            <div class="container reveal">
+                <h2>Projects</h2>
+                <p class="section-intro">Selected work with emphasis on the problem, implementation decisions, and impact.</p>
+                <div class="project-grid">
+                    <article class="project-card hover-card">
+                        <figure class="project-media">
+                            <img src="images/websiteimg1.PNG" alt="Screenshot of portfolio platform project">
+                        </figure>
+                        <h3>Portfolio Platform</h3>
+                        <p><strong>Problem:</strong> Needed a fast, maintainable portfolio to present technical capability without visual noise.</p>
+                        <p><strong>Tech Stack:</strong> HTML5, CSS, JavaScript, GitHub Pages</p>
+                        <p><strong>Outcome:</strong> Built a lightweight, accessible site with clear information hierarchy and responsive performance.</p>
+                        <a href="https://github.com/itsBroc/itsBroc.github.io" target="_blank" rel="noopener noreferrer">View Code</a>
+                    </article>
+                    <article class="project-card hover-card">
+                        <figure class="project-media">
+                            <img src="images/travelagencyimg1.PNG" alt="Screenshot of travel agency application project">
+                        </figure>
+                        <h3>Travel Agency Application</h3>
+                        <p><strong>Problem:</strong> Users needed to plan multi-destination travel with a clear booking workflow.</p>
+                        <p><strong>Tech Stack:</strong> Java, JavaFX, CSS, MVC Architecture</p>
+                        <p><strong>Outcome:</strong> Delivered a desktop app with structured planning flows and modular code separation.</p>
+                        <a href="https://github.com/itsBroc/Travel-Agency-Application" target="_blank" rel="noopener noreferrer">View Code</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills are grouped by domain to keep recruiter scanning fast and meaningful. -->
+        <section class="section" id="skills">
+            <div class="container reveal">
+                <h2>Technical Skills</h2>
+                <p class="section-intro">Organised by domain for quick technical scanning.</p>
+                <div class="skills-groups">
+                    <article class="skill-group hover-card">
+                        <h3>Languages</h3>
+                        <ul>
+                            <li><span class="iconify" data-icon="logos:python" aria-hidden="true"></span>Python</li>
+                            <li><span class="iconify" data-icon="devicon:java" aria-hidden="true"></span>Java</li>
+                            <li><span class="iconify" data-icon="logos:javascript" aria-hidden="true"></span>JavaScript</li>
+                            <li><span class="iconify" data-icon="vscode-icons:file-type-sql" aria-hidden="true"></span>SQL</li>
+                            <li><span class="iconify" data-icon="vscode-icons:file-type-cpp2" aria-hidden="true"></span>C/C++</li>
+                        </ul>
+                    </article>
+                    <article class="skill-group hover-card">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li><span class="iconify" data-icon="mdi:api" aria-hidden="true"></span>REST APIs</li>
+                            <li><span class="iconify" data-icon="mdi:source-branch" aria-hidden="true"></span>MVC Architecture</li>
+                            <li><span class="iconify" data-icon="mdi:pipe" aria-hidden="true"></span>Data Pipelines</li>
+                            <li><span class="iconify" data-icon="mdi:diagram-tree" aria-hidden="true"></span>System Design Fundamentals</li>
+                        </ul>
+                    </article>
+                    <article class="skill-group hover-card">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li><span class="iconify" data-icon="vscode-icons:file-type-html" aria-hidden="true"></span>HTML5</li>
+                            <li><span class="iconify" data-icon="vscode-icons:file-type-css" aria-hidden="true"></span>CSS</li>
+                            <li><span class="iconify" data-icon="mdi:cellphone-screenshot" aria-hidden="true"></span>Responsive UI</li>
+                            <li><span class="iconify" data-icon="mdi:accessibility" aria-hidden="true"></span>Accessibility Basics</li>
+                        </ul>
+                    </article>
+                    <article class="skill-group hover-card">
+                        <h3>Cloud</h3>
+                        <ul>
+                            <li><span class="iconify" data-icon="mdi:cloud-outline" aria-hidden="true"></span>Cloud-Native Services</li>
+                            <li><span class="iconify" data-icon="mdi:database-outline" aria-hidden="true"></span>Storage and Compute Concepts</li>
+                            <li><span class="iconify" data-icon="mdi:rocket-launch-outline" aria-hidden="true"></span>Deployment Workflows</li>
+                        </ul>
+                    </article>
+                    <article class="skill-group hover-card">
+                        <h3>Tooling</h3>
+                        <ul>
+                            <li><span class="iconify" data-icon="logos:git-icon" aria-hidden="true"></span>Git/GitHub</li>
+                            <li><span class="iconify" data-icon="devicon:vscode" aria-hidden="true"></span>VS Code</li>
+                            <li><span class="iconify" data-icon="mdi:chart-line" aria-hidden="true"></span>Dashboarding Tools</li>
+                            <li><span class="iconify" data-icon="mdi:account-group-outline" aria-hidden="true"></span>Agile Collaboration</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="extracurricular">
+            <div class="container reveal">
+                <h2>Extracurricular</h2>
+                <div class="fgc-grid">
+                    <article class="fgc-summary hover-card">
+                        <h3>Fortnite Global Championship 2025</h3>
+                        <p>Qualified for and competed at the Fortnite Global Championship 2025 in France under the in-game name <strong>m0untain</strong>. The preparation and live competition sharpened decision-making under pressure, rapid adaptation, and team communication in high-stakes environments.</p>
+                        <p><strong>Role:</strong> Competitive player (m0untain)</p>
+                        <p><strong>Location:</strong> France</p>
+                        <p><strong>Transferable strengths:</strong> composure under pressure, strategic planning, fast feedback loops, and execution consistency.</p>
+                    </article>
+
+                    <section class="fgc-carousel hover-card" data-carousel aria-label="FNCS 2025 photo carousel">
+                        <div class="fgc-track" data-carousel-track>
+                            <!-- Add your provided FNCS images at these paths if not present yet. -->
+                            <figure class="fgc-slide is-active">
+                                <img src="images/20250907_FNCSGC2025_Day_2_@konkolmichal-196 (3).jpg" alt="Walking onto the Fortnite Global Championship stage in France">
+                            </figure>
+                            <figure class="fgc-slide">
+                                <img src="images/20250907_FNCSGC2025_Day_2_@konkolmichal-290.jpg" alt="Fortnite Global Championship arena crowd and stage lighting">
+                            </figure>
+                            <figure class="fgc-slide">
+                                <img src="images/20250907_FNCSGC2025_Day_2_@konkolmichal-360.jpg" alt="Fortnite Global Championship trophy on stage">
+                            </figure>
+                        </div>
+
+                        <div class="fgc-controls">
+                            <button type="button" class="fgc-button" data-carousel-prev aria-label="Previous image">
+                                <span class="iconify" data-icon="mdi:chevron-left" aria-hidden="true"></span>
+                            </button>
+                            <div class="fgc-dots" data-carousel-dots aria-label="Choose slide">
+                                <button type="button" class="fgc-dot is-active" data-slide-to="0" aria-label="Show image 1"></button>
+                                <button type="button" class="fgc-dot" data-slide-to="1" aria-label="Show image 2"></button>
+                                <button type="button" class="fgc-dot" data-slide-to="2" aria-label="Show image 3"></button>
                             </div>
-
-                            <div class="education-right">
-                                <h3>2023 - present</h3>
-                                <h3>University of Technology Sydney
-                                <br>Bachelor of Software Engineering (Hons.)</h3>
-                                <ul>
-                                    <li>GPA: 6.42/7</li>
-                                </ul>
-                            </div>
+                            <button type="button" class="fgc-button" data-carousel-next aria-label="Next image">
+                                <span class="iconify" data-icon="mdi:chevron-right" aria-hidden="true"></span>
+                            </button>
                         </div>
-                    </div>
+                    </section>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="Contact" class="contact">
-                <div class ="container">
-                    <h2 data-aos="fade-in">Contact <span>Me</span></h2>
-                    <div class="card-container">
-                        <div class="card" data-aos="fade-in">
-                            <a href="mailto:bg17roxs@hotmail.com"><i class="fa-solid fa-envelope"></i></a>
-                            <h3>Email</h3>
-                        </div>
-                        <div class="card" data-aos="fade-in" data-aos-delay="100">
-                            <a href="https://github.com/itsBroc"><i class="fa-brands fa-github"></i></a>
-                            <h3>Github</h3>
-                        </div>
-                        <div class="card" data-aos="fade-in" data-aos-delay="200">
-                            <a href="https://www.linkedin.com/in/broc-geronimi-317a722a7/"><i class="fa-brands fa-linkedin"></i></a>
-                            <h3>LinkedIn</h3>
-                        </div>
-                    </div>
+        <section class="section" id="contact">
+            <div class="container reveal">
+                <h2>Contact</h2>
+                <div class="contact-card contact-panel hover-card">
+                    <p class="contact-kicker">Let's connect</p>
+                    <p class="contact-email">
+                        <a href="mailto:bg17roxs@hotmail.com">bg17roxs@hotmail.com</a>
+                    </p>
+                    <nav class="contact-icons" aria-label="Contact links">
+                        <a href="mailto:bg17roxs@hotmail.com" aria-label="Email"><span class="iconify" data-icon="mdi:email-outline" aria-hidden="true"></span></a>
+                        <a href="https://github.com/itsBroc" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><span class="iconify" data-icon="mdi:github" aria-hidden="true"></span></a>
+                        <a href="https://www.linkedin.com/in/broc-geronimi-317a722a7/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="iconify" data-icon="mdi:linkedin" aria-hidden="true"></span></a>
+                    </nav>
                 </div>
-            </section>
-        </main>
-    </div>
-    </body>
+            </div>
+        </section>
+    </main>
+</body>
 </html>
